@@ -1,0 +1,17 @@
+{
+  "name": "Kihoskh Rating",
+  "version": "1.0",
+  "description": "Fetch ratings for Kihoskh",
+  "manifest_version": 2,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.kihoskh.dk/collections/*"],
+      "js": ["content_script.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
